@@ -96,6 +96,9 @@ footer {
   .burger_menu{
     display: inline-block;
     padding: 1em;
+    position: absolute;
+    left: 0;
+    top: 10px;
   }
   .burger_menu svg {
     width: 48px;
