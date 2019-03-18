@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import './header/Header.css'
 import Header from './header/Header'
+import Top from './top/Top'
 import main from './img/tlo.png'
 
 class App extends Component {
@@ -12,8 +13,14 @@ class App extends Component {
         <Header/>
         <div className="main-container">
           <hr/>
+          <Top/>
+          <Top/>
+          <Top/>
+          <Top/>
+          <Top/>
           
         </div>
+        
       </div>
     );
   }
