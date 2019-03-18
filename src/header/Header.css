@@ -1,11 +1,25 @@
 .Header {
   height: 100px;
   background-color: #f1f1f1;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
+  background-image: linear-gradient(90deg, black,#05042f);
   position: relative;
   z-index: 40;
 }
 
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100%, -50%);
+  color: gray;
+}
+
+.center h1 {
+  font-size: 350%;
+  text-shadow: 0px 0px 8px rgb(105, 105, 105);
+  font-family: 'Srisakdi'
+}
 .Header-logo {
   height: 80%;
 }
@@ -63,11 +77,14 @@ footer {
   box-shadow: 0 0 2px 0 #ddd;
   background-color: #d8d8d8;
 } 
-@media screen and (max-height: 600px) {
+@media screen and (max-width: 1000px) {
   /* .Footer {
     position: relative;
     bottom: -10px
   } */
+  .center h1 {
+    font-size: 200%;
+  }
 }
 @media screen and (max-width: 565px){
   .nav{
@@ -103,5 +120,12 @@ footer {
   .burger_menu svg {
     width: 48px;
     fill: #a8a8a8;
+  }
+  .center {
+    transform: translate(0, -50%)
+  }
+  .center h1 {
+    font-size: 200%;
+    
   }
 }

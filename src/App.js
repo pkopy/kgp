@@ -11,10 +11,8 @@ class App extends Component {
       <div className="App">
         <Header/>
         <div className="main-container">
-          <img src={main}  alt="montain"/>
-          <div className="center">
-            <h1>Korona Gór Polski</h1>
-          </div>
+          <hr/>
+          
         </div>
       </div>
     );
